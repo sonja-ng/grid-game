@@ -15,6 +15,11 @@ class Game
        puts
        puts "Enter a direction (N, S, E, W) for the robot to move one spot to. To end game, type in STOP"
        ans = gets.chomp.upcase!
+       directions = "NSEW"
+       if !directions.include?(ans)
+        puts "direction needs to be N S E or W, please try again"
+        next
+       end
        break if ans == "STOP"
        @robot.move(ans)
       end
