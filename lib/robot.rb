@@ -37,7 +37,7 @@ class Robot
       @board.place_robot(@end_pos, @mark)
       return true
     else
-        raise "You fell off the edge!"
+        raise "You fell off the edge! Game Over"
         return false
     end
   end

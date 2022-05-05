@@ -16,10 +16,7 @@ class Game
        puts "Enter a direction (N, S, E, W) for the robot to move one spot to. To end game, type in STOP"
        ans = gets.chomp.upcase!
        break if ans == "STOP"
-       if !@robot.move(ans)
-        puts "move invalid!"
-        next
-       end
+       @robot.move(ans)
       end
       puts "Good game. Goodbye!"
     end

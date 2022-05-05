@@ -3,7 +3,8 @@ require_relative 'game'
 
 puts "Enter a size for the grid (must be a number between 2 and 15):"
 rows_num = gets.chomp.to_i
-raise "invalid position" if rows_num < 2 || rows_num > 15
+raise "Too small!" if rows_num < 2 
+raise "Too big!" if rows_num > 15
 puts "Enter a marker for your robot. It should be a letter. Case doesn't matter."
 mark = gets.chomp
 alphabet = ('a'..'z').to_a + ('A'..'Z').to_a
