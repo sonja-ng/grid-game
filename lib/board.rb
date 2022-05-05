@@ -3,7 +3,7 @@ require "byebug"
 class Board
     attr_accessor :grid
   def initialize(length)
-    @grid = Array.new(length) { Array.new(length, :_)}
+    @grid = Array.new(length) { Array.new(length, "_")}
   end
 
   def [](pos)
@@ -19,7 +19,7 @@ class Board
   end
 
   def remove_robot(old_pos)
-    self[old_pos] = :_
+    self[old_pos] = "_"
   end
 
   def print
