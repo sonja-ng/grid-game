@@ -1,5 +1,5 @@
 # grid-game
 
-## run bundle install
+run bundle install
 
-## run ruby play_game.rb
+run ruby play_game.rb
